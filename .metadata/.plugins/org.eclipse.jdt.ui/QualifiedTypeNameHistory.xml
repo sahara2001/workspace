@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.mail.internet.InternetAddress"/>
+<fullyQualifiedTypeName name="javax.mail.internet.MimeMessage"/>
+<fullyQualifiedTypeName name="components.simplereader.SimpleReader"/>
+<fullyQualifiedTypeName name="components.utilities.FormatChecker"/>
+<fullyQualifiedTypeName name="components.simplewriter.SimpleWriter"/>
+<fullyQualifiedTypeName name="components.simplewriter.SimpleWriter1L"/>
+<fullyQualifiedTypeName name="components.simplereader.SimpleReader1L"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.portable.InputStream"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="sun.applet.Main"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="components.naturalnumber.NaturalNumber"/>
+<fullyQualifiedTypeName name="components.naturalnumber.NaturalNumber2"/>
+</qualifiedTypeNameHistroy>

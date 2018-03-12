@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="29" timestamp="1520562470802" analysisTimestamp="1520562466181" release="">
+  <Project projectName="XMLTreeExpressionEvaluator">
+    <Jar>C:\Users\santee\Documents\workspace\XMLTreeExpressionEvaluator\bin\XMLTreeNNExpressionEvaluator.class</Jar>
+    <AuxClasspathEntry>C:\Users\santee\Documents\workspace\XMLTreeExpressionEvaluator\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\santee\Documents\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\santee\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\santee\.p2\pool\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_151\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\santee\Documents\workspace\XMLTreeExpressionEvaluator\src</SrcDir>
+    <SrcDir>C:\Users\santee\Documents\workspace\XMLTreeExpressionEvaluator\test</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="4" last="5" removedByChange="true">
+    <Class classname="XMLTreeIntExpressionEvaluator">
+      <SourceLine classname="XMLTreeIntExpressionEvaluator" sourcefile="XMLTreeIntExpressionEvaluator.java" sourcepath="XMLTreeIntExpressionEvaluator.java"/>
+    </Class>
+    <Method classname="XMLTreeIntExpressionEvaluator" name="evaluate" signature="(Lcomponents/xmltree/XMLTree;)I" isStatic="true">
+      <SourceLine classname="XMLTreeIntExpressionEvaluator" start="37" end="63" startBytecode="0" endBytecode="62" sourcefile="XMLTreeIntExpressionEvaluator.java" sourcepath="XMLTreeIntExpressionEvaluator.java"/>
+    </Method>
+    <LocalVariable name="result" register="1" pc="186" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="XMLTreeIntExpressionEvaluator" start="60" end="60" startBytecode="185" endBytecode="185" sourcefile="XMLTreeIntExpressionEvaluator.java" sourcepath="XMLTreeIntExpressionEvaluator.java"/>
+    <SourceLine classname="XMLTreeIntExpressionEvaluator" start="60" end="60" startBytecode="185" endBytecode="185" sourcefile="XMLTreeIntExpressionEvaluator.java" sourcepath="XMLTreeIntExpressionEvaluator.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="result"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="28">
+    <Class classname="XMLTreeNNExpressionEvaluator">
+      <SourceLine classname="XMLTreeNNExpressionEvaluator" sourcefile="XMLTreeNNExpressionEvaluator.java" sourcepath="XMLTreeNNExpressionEvaluator.java"/>
+    </Class>
+    <Method classname="XMLTreeNNExpressionEvaluator" name="evaluate" signature="(Lcomponents/xmltree/XMLTree;)Lcomponents/naturalnumber/NaturalNumber;" isStatic="true">
+      <SourceLine classname="XMLTreeNNExpressionEvaluator" start="39" end="105" startBytecode="0" endBytecode="134" sourcefile="XMLTreeNNExpressionEvaluator.java" sourcepath="XMLTreeNNExpressionEvaluator.java"/>
+    </Method>
+    <LocalVariable name="secondChild" register="4" pc="187" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="XMLTreeNNExpressionEvaluator" start="57" end="57" startBytecode="185" endBytecode="185" sourcefile="XMLTreeNNExpressionEvaluator.java" sourcepath="XMLTreeNNExpressionEvaluator.java"/>
+    <SourceLine classname="XMLTreeNNExpressionEvaluator" start="57" end="57" startBytecode="185" endBytecode="185" sourcefile="XMLTreeNNExpressionEvaluator.java" sourcepath="XMLTreeNNExpressionEvaluator.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="secondChild"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="10" last="13" removedByChange="true">
+    <Class classname="testOne">
+      <SourceLine classname="testOne" sourcefile="testOne.java" sourcepath="testOne.java"/>
+    </Class>
+    <Method classname="testOne" name="test" signature="()V" isStatic="false">
+      <SourceLine classname="testOne" start="13" end="21" startBytecode="0" endBytecode="21" sourcefile="testOne.java" sourcepath="testOne.java"/>
+    </Method>
+    <String value="C:\\Users\\santee\\Documents\\workspace\\testDoc" role="FILE_NAME"/>
+    <SourceLine classname="testOne" start="17" end="17" startBytecode="24" endBytecode="24" sourcefile="testOne.java" sourcepath="testOne.java"/>
+    <SourceLine classname="testOne" start="17" end="17" startBytecode="24" endBytecode="24" sourcefile="testOne.java" sourcepath="testOne.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="14">
+    <Class classname="testOne">
+      <SourceLine classname="testOne" sourcefile="testOne.java" sourcepath="testOne.java"/>
+    </Class>
+    <Method classname="testOne" name="test" signature="()V" isStatic="false">
+      <SourceLine classname="testOne" start="13" end="21" startBytecode="0" endBytecode="21" sourcefile="testOne.java" sourcepath="testOne.java"/>
+    </Method>
+    <String value="C:\\Users\\santee\\Documents\\workspace\\testDoc\\testIn.txt" role="FILE_NAME"/>
+    <SourceLine classname="testOne" start="17" end="17" startBytecode="24" endBytecode="24" sourcefile="testOne.java" sourcepath="testOne.java"/>
+    <SourceLine classname="testOne" start="17" end="17" startBytecode="24" endBytecode="24" sourcefile="testOne.java" sourcepath="testOne.java"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="9">
+    <Class classname="testOne">
+      <SourceLine classname="testOne" start="9" end="21" sourcefile="testOne.java" sourcepath="testOne.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NP_NONNULL_PARAM_VIOLATION" priority="1" rank="6" abbrev="NP" category="CORRECTNESS" first="10">
+    <Class classname="testOne">
+      <SourceLine classname="testOne" sourcefile="testOne.java" sourcepath="testOne.java"/>
+    </Class>
+    <Method classname="testOne" name="test" signature="()V" isStatic="false">
+      <SourceLine classname="testOne" start="13" end="21" startBytecode="0" endBytecode="151" sourcefile="testOne.java" sourcepath="testOne.java"/>
+    </Method>
+    <Method classname="XMLTreeIntExpressionEvaluator" name="main" signature="([Ljava/lang/String;)V" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="XMLTreeIntExpressionEvaluator" start="83" end="99" startBytecode="0" endBytecode="260" sourcefile="XMLTreeIntExpressionEvaluator.java" sourcepath="XMLTreeIntExpressionEvaluator.java"/>
+    </Method>
+    <Int value="1" role="INT_NULL_ARG"/>
+    <LocalVariable name="args" register="1" pc="35" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="testOne" start="19" end="19" startBytecode="36" endBytecode="36" sourcefile="testOne.java" sourcepath="testOne.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="18">
+    <Class classname="testTwo">
+      <SourceLine classname="testTwo" sourcefile="testTwo.java" sourcepath="testTwo.java"/>
+    </Class>
+    <Method classname="testTwo" name="test" signature="()V" isStatic="false">
+      <SourceLine classname="testTwo" start="13" end="21" startBytecode="0" endBytecode="21" sourcefile="testTwo.java" sourcepath="testTwo.java"/>
+    </Method>
+    <String value="C:\\Users\\santee\\Documents\\workspace\\testDoc\\testIn.txt" role="FILE_NAME"/>
+    <SourceLine classname="testTwo" start="17" end="17" startBytecode="24" endBytecode="24" sourcefile="testTwo.java" sourcepath="testTwo.java"/>
+    <SourceLine classname="testTwo" start="17" end="17" startBytecode="24" endBytecode="24" sourcefile="testTwo.java" sourcepath="testTwo.java"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="18">
+    <Class classname="testTwo">
+      <SourceLine classname="testTwo" start="9" end="21" sourcefile="testTwo.java" sourcepath="testTwo.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NP_NONNULL_PARAM_VIOLATION" priority="1" rank="6" abbrev="NP" category="CORRECTNESS" first="18" last="18" removedByChange="true">
+    <Class classname="testTwo">
+      <SourceLine classname="testTwo" sourcefile="testTwo.java" sourcepath="testTwo.java"/>
+    </Class>
+    <Method classname="testTwo" name="test" signature="()V" isStatic="false">
+      <SourceLine classname="testTwo" start="13" end="21" startBytecode="0" endBytecode="151" sourcefile="testTwo.java" sourcepath="testTwo.java"/>
+    </Method>
+    <Method classname="XMLTreeIntExpressionEvaluator" name="main" signature="([Ljava/lang/String;)V" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="XMLTreeIntExpressionEvaluator" start="86" end="102" startBytecode="0" endBytecode="260" sourcefile="XMLTreeIntExpressionEvaluator.java" sourcepath="XMLTreeIntExpressionEvaluator.java"/>
+    </Method>
+    <Int value="1" role="INT_NULL_ARG"/>
+    <LocalVariable name="args" register="1" pc="35" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="testTwo" start="19" end="19" startBytecode="36" endBytecode="36" sourcefile="testTwo.java" sourcepath="testTwo.java"/>
+  </BugInstance>
+  <BugInstance type="NP_NONNULL_PARAM_VIOLATION" priority="1" rank="6" abbrev="NP" category="CORRECTNESS" first="19">
+    <Class classname="testTwo">
+      <SourceLine classname="testTwo" sourcefile="testTwo.java" sourcepath="testTwo.java"/>
+    </Class>
+    <Method classname="testTwo" name="test" signature="()V" isStatic="false">
+      <SourceLine classname="testTwo" start="13" end="21" startBytecode="0" endBytecode="151" sourcefile="testTwo.java" sourcepath="testTwo.java"/>
+    </Method>
+    <Method classname="XMLTreeNNExpressionEvaluator" name="main" signature="([Ljava/lang/String;)V" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="XMLTreeNNExpressionEvaluator" start="86" end="102" startBytecode="0" endBytecode="260" sourcefile="XMLTreeNNExpressionEvaluator.java" sourcepath="XMLTreeNNExpressionEvaluator.java"/>
+    </Method>
+    <Int value="1" role="INT_NULL_ARG"/>
+    <LocalVariable name="args" register="1" pc="35" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="testTwo" start="19" end="19" startBytecode="36" endBytecode="36" sourcefile="testTwo.java" sourcepath="testTwo.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 8 Mar 2018 21:27:44 -0500" total_classes="1" referenced_classes="20" total_bugs="7" total_size="53" num_packages="1" java_version="1.8.0_151" vm_version="25.151-b12" cpu_seconds="16.03" clock_seconds="4.72" peak_mbytes="423.40" alloc_mbytes="1024.00" gc_seconds="0.27" priority_2="5" priority_1="2">
+    <PackageStats package="" total_bugs="7" total_types="3" total_size="53" priority_2="5" priority_1="2">
+      <ClassStats class="XMLTreeNNExpressionEvaluator" sourceFile="XMLTreeNNExpressionEvaluator.java" interface="false" size="53" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="1474" invocations="2" avgMicrosecondsPerInvocation="737280" maxMicrosecondsPerInvocation="1063516" standardDeviationMircosecondsPerInvocation="326236"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="622" invocations="363" avgMicrosecondsPerInvocation="1715" maxMicrosecondsPerInvocation="90389" standardDeviationMircosecondsPerInvocation="5665"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="242" invocations="20" avgMicrosecondsPerInvocation="12129" maxMicrosecondsPerInvocation="56106" standardDeviationMircosecondsPerInvocation="19142"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="239" invocations="363" avgMicrosecondsPerInvocation="660" maxMicrosecondsPerInvocation="32001" standardDeviationMircosecondsPerInvocation="2020"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="118" invocations="20" avgMicrosecondsPerInvocation="5932" maxMicrosecondsPerInvocation="83681" standardDeviationMircosecondsPerInvocation="17968"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="114" invocations="64" avgMicrosecondsPerInvocation="1788" maxMicrosecondsPerInvocation="10902" standardDeviationMircosecondsPerInvocation="2029"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="111" invocations="4" avgMicrosecondsPerInvocation="27967" maxMicrosecondsPerInvocation="105287" standardDeviationMircosecondsPerInvocation="44655"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="109" invocations="20" avgMicrosecondsPerInvocation="5496" maxMicrosecondsPerInvocation="34471" standardDeviationMircosecondsPerInvocation="8309"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="103" invocations="4" avgMicrosecondsPerInvocation="25884" maxMicrosecondsPerInvocation="97904" standardDeviationMircosecondsPerInvocation="41619"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="93" invocations="5" avgMicrosecondsPerInvocation="18609" maxMicrosecondsPerInvocation="39162" standardDeviationMircosecondsPerInvocation="15932"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="75" invocations="47" avgMicrosecondsPerInvocation="1599" maxMicrosecondsPerInvocation="44313" standardDeviationMircosecondsPerInvocation="6516"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1519539916200" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1519539916206" release="" codeSize="23" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1519539977861" release="" codeSize="23" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1519584150806" release="" codeSize="23" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1519585176247" release="" codeSize="27" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1519585671693" release="" codeSize="31" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1519585761612" release="" codeSize="42" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1519585926566" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1519586057407" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1519586232688" release="" codeSize="5" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1519586284591" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1519586363129" release="" codeSize="7" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1519586379449" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1519586428292" release="" codeSize="36" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1519586510249" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1519586801160" release="" codeSize="38" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1519586921334" release="" codeSize="38" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1519587042592" release="" codeSize="38" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1519587059743" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1519587070507" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1519589223144" release="" codeSize="20" numClasses="1"/>
+    <AppVersion sequence="21" timestamp="1519589274399" release="" codeSize="20" numClasses="1"/>
+    <AppVersion sequence="22" timestamp="1519589569462" release="" codeSize="42" numClasses="1"/>
+    <AppVersion sequence="23" timestamp="1520363680620" release="" codeSize="20" numClasses="1"/>
+    <AppVersion sequence="24" timestamp="1520363850505" release="" codeSize="20" numClasses="1"/>
+    <AppVersion sequence="25" timestamp="1520364130293" release="" codeSize="50" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1520364537867" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1520364560329" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1520385238161" release="" codeSize="53" numClasses="1"/>
+  </History>
+</BugCollection>

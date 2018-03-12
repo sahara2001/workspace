@@ -1,0 +1,133 @@
+import components.naturalnumber.NaturalNumber;
+import components.naturalnumber.NaturalNumber2;
+import components.simplereader.SimpleReader;
+import components.simplereader.SimpleReader1L;
+import components.simplewriter.SimpleWriter;
+import components.simplewriter.SimpleWriter1L;
+import components.utilities.Reporter;
+import components.xmltree.XMLTree;
+import components.xmltree.XMLTree1;
+
+/**
+ * Program to evaluate XMLTree expressions of {@code int}.
+ *
+ * @author Heming Sun
+ *
+ */
+public final class XMLTreeNNExpressionEvaluator {
+
+    /**
+     * Private constructor so this utility class cannot be instantiated.
+     */
+    private XMLTreeNNExpressionEvaluator() {
+    }
+
+    /**
+     * Evaluate the given expression.
+     *
+     * @param exp
+     *            the {@code XMLTree} representing the expression
+     * @return the value of the expression
+     * @requires <pre>
+     * [exp is a subtree of a well-formed XML arithmetic expression]  and
+     *  [the label of the root of exp is not "expression"]
+     * </pre>
+     * @ensures evaluate = [the value of the expression]
+     */
+    private static NaturalNumber evaluate(XMLTree exp) {
+
+        assert exp != null : "Violation of: exp is not null";
+        NaturalNumber result = new NaturalNumber2(Integer.MAX_VALUE);
+
+        /*
+         * test if expression tree is valid
+         */
+        if (exp.numberOfChildren() != 0) {
+            /*
+             * no root tag
+             */
+
+            switch (exp.label()) {
+                case "plus":
+                    result = evaluate(exp.child(0));
+                    result.add(evaluate(exp.child(1)));
+                    break;
+                case "minus":
+                    XMLTree firstChild = exp.child(0);
+                    XMLTree secondChild = exp.child(0);
+                    result = evaluate(firstChild);
+                    NaturalNumber res2 = evaluate(exp.child(1));
+
+                    if (result.compareTo(res2) < 0) {
+
+                        Reporter.fatalErrorToConsole("Invalid expression tree: "
+                                + "Violation of this >= n in substract method!");
+                    }
+
+                    result.subtract(res2);
+                    break;
+                case "times":
+                    result = evaluate(exp.child(0));
+                    result.multiply(evaluate(exp.child(1)));
+                    break;
+                case "divide":
+                    XMLTree child2 = exp.child(1);
+                    NaturalNumber operand2 = evaluate(child2);
+                    result = evaluate(exp.child(0));
+                    if (operand2.isZero()) {
+
+                        Reporter.fatalErrorToConsole("Invalid expression tree: "
+                                + "Violation of n > 0 in divide method!");
+                    }
+
+                    result.divide(operand2);
+                    break;
+                default:
+                    // should print error message
+                    break;
+
+            }
+
+        }
+
+        else if (exp.label().equals("number")) {
+            /*
+             * condition can be deleted because tree should be valid
+             */
+            if (Integer.parseInt(exp.attributeValue("value")) < 0) {
+                Reporter.fatalErrorToConsole("Invalid expression tree:Violation"
+                        + " of number is integer no smaller than zero in "
+                        + "Constructor!");
+            }
+            result.setFromString(exp.attributeValue("value"));
+        }
+
+        return result;
+    }
+
+    /**
+     * Main method.
+     *
+     * @param args
+     *            the command line arguments
+     */
+    public static void main(String[] args) {
+        SimpleReader in = new SimpleReader1L();
+        SimpleWriter out = new SimpleWriter1L();
+
+        out.print("Enter the name of an expression XML file: ");
+        String file = in.nextLine();
+        while (!file.equals("")) {
+            XMLTree exp = new XMLTree1(file);
+            out.println(evaluate(exp.child(0)));
+            out.print("Enter the name of an expression XML file: ");
+            file = in.nextLine();
+        }
+
+        out.println("Invalid file location!");
+
+        in.close();
+        out.close();
+    }
+
+}
